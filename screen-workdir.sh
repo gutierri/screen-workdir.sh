@@ -15,7 +15,7 @@ function screen(){
 			local local_path=$(pwd|rev|cut -d/ -f1|rev)
 			bash -c "$SCREEN -S $local_path"
 		else
-			echo "Session it's running... Close try again."
+			echo "Session is running... Close and try again."
 		fi
 	else
 		bash -c "$SCREEN $@"
