@@ -4,9 +4,9 @@ Utility to create session with the current folder name on GNU Screen
 ### Install
 
 ```sh
-$ curl https://raw.githubusercontent.com/gutierri/screen-workdir.sh/master/screen-workdir.sh ~/.local/bin/screen-workdir.sh
+$ curl https://raw.githubusercontent.com/gutierri/screen-workdir.sh/master/screen-workdir.sh -o ~/.local/bin/screen-workdir.sh
 
-$ echo "source ~/.local/bin/screen-workdir.sh >> ~/.bashrc"
+$ echo "source ~/.local/bin/screen-workdir.sh" >> ~/.bashrc
 ```
 
 ### Usage

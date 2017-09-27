@@ -14,7 +14,7 @@ function screen(){
                 if [ -z "$STY" ]; then
                         $SCREEN -S ${PWD##*/}
                 else
-                        echo "Session it's running... Close try again."
+                        echo "Session is running... Close and try again."
                 fi
         else
                 $SCREEN $@
