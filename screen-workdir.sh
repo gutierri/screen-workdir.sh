@@ -9,7 +9,7 @@ else
 fi
 
 function screen(){
-        if [[ "$@" =~ "-w" ]]; then
+        if [[ "$1" = "-w" ]]; then
                 shift
                 if [ -z "$STY" ]; then
                         $SCREEN -S ${PWD##*/}
