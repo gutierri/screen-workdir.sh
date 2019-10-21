@@ -14,7 +14,8 @@ function screen(){
                 if [ -z "$STY" ]; then
                         $SCREEN -S ${PWD##*/}
                 else
-                        echo "Session is running... Close and try again."
+                        $SCREEN -AdmS ${PWD##*/} bash
+                        echo "Screen session ${PWD##*/} created!"
                 fi
         else
                 $SCREEN $@
